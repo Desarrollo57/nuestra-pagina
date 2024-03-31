@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/estilos/reset.css">
-    <link rel="stylesheet" href="/estilos/style.css">
-    <title>Contacto - Villamil y asociados</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+    <title>Contacto - desarrolladores</title>
 </head>
 <body>
     <header>
-        <div class="caja">
-            <h1><img src="/imagenes/logo.png" alt="logo consultora" class="logo"></h1>
-            <nav>
-                <ul>
-                    <li><a href="../index.html">Principal</a></li>
-                    <li><a href="./productos.html">Servicios</a></li>
-                    <li><a href="/vistas/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <div class="navbar">
+            <div class="logo"><a href="#">Aquí logo</a></div>
+            <ul class="links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+                <li><a href="services">Servicios</a></li>
+                <li><a href="./vistas/contacto.html">Contacto</a></li>
+            </ul>
+            <a href="" class="action-btn">Get Started</a>
+            <div class="toggle-btn"><img src="../img/icons/menu.svg" alt="icono menu" id="icon1" onclick="changeImage ()"></div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./portafolio.html">Portafolio</a></li>
+                <li><a href="services">Servicios</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="#" class="action-btn">Get Started</a></li>
         </div>
     </header>
     <main>
@@ -31,18 +38,15 @@
             <label for="telefono">Telefono</label>
             <input type="" id="telefono" class="imput-padron" required placeholder="+57 xxxxxxxxxx">
 
-            <label for="mensaje">Mensaje</label>
+            <label for="mensaje">Describe como quieres tu sitio web</label>
             <textarea id="mensaje" cols="70" rows="10" class="imput-padron" required></textarea>
-            <fieldset>
+            <fieldset class="container">
                 <legend>¿Como le gustaria que lo contactemos?</legend>
-
                 <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                
                 <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Telefono</label>
-                
                 <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="container">
                 <legend>¿En cual horario prefiere ser atendido?</legend>
                 <select id="FranjaHoraria">
                     <option>Mañana</option>
@@ -50,37 +54,15 @@
                     <option>Noche</option>
                 </select>
             </fieldset>
-            <label class="checkbox"><input type="checkbox" >¿Le gustaría recibir actualizaciones del estado de su proceso?</label>
             <input type="submit" value="Enviar Formulario" class="enviar" onclick="captura()">
         </form>
-        <!--<h3 id="respuesta">aqui respuesta</h3>-->
-        <table>
-            <thead>
-                <tr>
-                    <th>Dia</th>
-                    <th>Hora</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lunes</td>
-                    <td>08h - 16h</td>
-                </tr>
-                <tr>
-                    <td>Miercoles</td>
-                    <td>08h - 16h</td>
-                </tr>
-                <tr>
-                    <td>Viernes</td>
-                    <td>08h - 16h</td>
-                </tr>
-            </tbody>
-        </table>
     </main>
     <footer>
-        <img src="/imagenes/logo2.png" alt="logo color blanco">
-        <p class="copyright">© Copyright VillamilAbogados - 2024</p>
-        <a aria-label="Chat on WhatsApp" href="https://wa.me/573114909348?" target="_blank"><img alt="icono WhatsApp" src="/imagenes/Iconos/logo-wsp.png" class="btn-wsp" id="respuesta"/>
+        <div class="container-copytight">
+            <img src="../img/logo-sinfondo-r.png" alt="logo color blanco">
+            <p class="copyright">© Copyright Desarrolladores - 2024</p>
+        </div>
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/573205254347?" target="_blank"><img alt="icono WhatsApp" src="../img/icons/logo-wsp.png" class="btn-wsp" id="respuesta"/>
             <i class="icon-whatsapp"></i>
         </a>
     </footer>
